@@ -1,8 +1,17 @@
 // Code Keypad Component Here
 
 function Keypad (){
+    function keypad(event) {
+        event.preventDefault()
+        console.log('Entering password...')
+    }
+
     return (
-        <div></div>
+        <div>
+            <input onChange={keypad} type="password" 
+            placeholder="enter password..." /> 
+            
+        </div>
     )
 }
 
